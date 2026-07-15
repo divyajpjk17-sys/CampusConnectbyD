@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "name": "Aditya Sharma",
+    "email": "aditya@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "B.Tech CSE",
+    "year": "Final Year",
+    "bio": "AI Enthusiast and Open Source Contributor. Building the future.",
+    "avatar": "https://ui-avatars.com/api/?name=Aditya+Sharma&background=14532D&color=fff"
+  },
+  {
+    "id": "2",
+    "name": "Priya Nair",
+    "email": "priya@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "B.Tech ECE",
+    "year": "3rd Year",
+    "bio": "Hardware hacking and IoT.",
+    "avatar": "https://ui-avatars.com/api/?name=Priya+Nair&background=14532D&color=fff"
+  },
+  {
+    "id": "3",
+    "name": "Rahul Kumar",
+    "email": "rahul@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "BSc Physics",
+    "year": "2nd Year",
+    "bio": "Exploring the cosmos one equation at a time.",
+    "avatar": "https://ui-avatars.com/api/?name=Rahul+Kumar&background=14532D&color=fff"
+  },
+  {
+    "id": "4",
+    "name": "Divya Darshini",
+    "email": "divya@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "MCA",
+    "year": "1st Year",
+    "bio": "Web dev and coffee.",
+    "avatar": "https://ui-avatars.com/api/?name=Divya+Darshini&background=14532D&color=fff"
+  },
+  {
+    "id": "5",
+    "name": "Megha Joseph",
+    "email": "megha@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "BBA",
+    "year": "Final Year",
+    "bio": "Marketing & Strategy.",
+    "avatar": "https://ui-avatars.com/api/?name=Megha+Joseph&background=14532D&color=fff"
+  },
+  {
+    "id": "6",
+    "name": "Arjun Patel",
+    "email": "arjun@student.edu",
+    "password": "password",
+    "college": "Campus Connect Community",
+    "department": "B.Tech IT",
+    "year": "3rd Year",
+    "bio": "Cybersecurity researcher.",
+    "avatar": "https://ui-avatars.com/api/?name=Arjun+Patel&background=14532D&color=fff"
+  },
+  {
+    "email": "divyajpjk17@gmail.com",
+    "password": "divyajpjk17",
+    "name": "Divyadarshini J",
+    "id": "1783432957566",
+    "avatar": "http://localhost:5000/uploads/1783432990132-WhatsApp-Image-2026-04-18-at-2.31.47-PM.jpeg",
+    "banner": "http://localhost:5000/uploads/1783433054025-Wallpaper-of-PC-1783.jpg",
+    "college": "BS Abdur Rahman Crescent Institute of Science & Technology",
+    "department": "B.Tech CSE (IoT)",
+    "year": "3rd Year",
+    "bio": "I’m a creative writer who brings storytelling, imagination, and clarity into building a responsive & user friendly interface."
+  },
+  {
+    "email": "divyajpjk17@gmail.com",
+    "password": "divyajpjk17",
+    "name": "Divyadarshini J",
+    "id": "1783433226743"
+  },
+  {
+    "email": "240191601007@crescent.education",
+    "password": "01082007",
+    "name": "Ansar Sakeen A",
+    "id": "1783530638060",
+    "avatar": "http://localhost:5000/uploads/1783530654482-Screenshot-2026-07-08-223752.png",
+    "college": "BS Abdur Rahman Crescent University of Science & Technology",
+    "department": "B.Tech CSE (IoT)",
+    "year": "3rd Year",
+    "bio": "Graphic designer focused on integrating clean aesthetics and visual design into digital products, including websites and user interfaces.",
+    "banner": "http://localhost:5000/uploads/1783530857482-download-(19).jpg"
+  },
+  {
+    "email": "divyajpjk17@gmail.com",
+    "password": "divyajpjk17",
+    "name": "Divyadarshini J",
+    "id": "1783603515855"
+  }
+]

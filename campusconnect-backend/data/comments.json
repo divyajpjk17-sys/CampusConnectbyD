@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c1",
+    "postId": "101",
+    "userId": "4",
+    "authorName": "Divya Darshini",
+    "authorAvatar": "https://ui-avatars.com/api/?name=Divya+Darshini&background=14532D&color=fff",
+    "content": "This looks amazing! Starred it.",
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  },
+  {
+    "postId": "1783531182332",
+    "userId": "1783432957566",
+    "authorName": "Divyadarshini J",
+    "authorAvatar": "http://localhost:5000/uploads/1783432990132-WhatsApp-Image-2026-04-18-at-2.31.47-PM.jpeg",
+    "content": "Great learning experience! Glad we got it working in the end. 🚀",
+    "id": "1783531448430",
+    "createdAt": "2026-07-08T17:24:08.430Z"
+  }
+]

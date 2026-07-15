@@ -1,0 +1,30 @@
+[
+  {
+    "id": "101",
+    "userId": "1",
+    "authorName": "Aditya Sharma",
+    "authorAvatar": "https://ui-avatars.com/api/?name=Aditya+Sharma&background=14532D&color=fff",
+    "college": "Campus Connect Community",
+    "department": "B.Tech CSE",
+    "content": "Just launched my new machine learning framework! 🚀 Check it out on my GitHub.",
+    "category": "Project",
+    "likes": 120,
+    "comments": 15,
+    "imageUrl": "",
+    "createdAt": "2026-07-07T13:36:29.110Z"
+  },
+  {
+    "id": "102",
+    "userId": "4",
+    "authorName": "Divya Darshini",
+    "authorAvatar": "https://ui-avatars.com/api/?name=Divya+Darshini&background=14532D&color=fff",
+    "college": "Campus Connect Community",
+    "department": "MCA",
+    "content": "Anyone else struggling with the Advanced OS assignment? 😭",
+    "category": "General",
+    "likes": 45,
+    "comments": 22,
+    "imageUrl": "",
+    "createdAt": "2026-07-06T13:36:29.112Z"
+  }
+]

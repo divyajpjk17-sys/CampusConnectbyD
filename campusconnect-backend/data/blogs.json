@@ -1,0 +1,17 @@
+[
+  {
+    "id": "501",
+    "userId": "3",
+    "authorName": "Rahul Kumar",
+    "authorAvatar": "https://ui-avatars.com/api/?name=Rahul+Kumar&background=14532D&color=fff",
+    "college": "Campus Connect Community",
+    "department": "BSc Physics",
+    "title": "The Future of Quantum Computing",
+    "content": "Quantum computing is rapidly evolving...",
+    "category": "Tech",
+    "likes": 50,
+    "comments": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500&q=80",
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  }
+]

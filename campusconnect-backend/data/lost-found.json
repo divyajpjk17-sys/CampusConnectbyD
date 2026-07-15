@@ -1,0 +1,32 @@
+[
+  {
+    "userId": "1783530638060",
+    "authorName": "Ansar Sakeen A",
+    "authorAvatar": "http://localhost:5000/uploads/1783530654482-Screenshot-2026-07-08-223752.png",
+    "college": "BS Abdur Rahman Crescent University of Science & Technology",
+    "department": "B.Tech CSE (IoT)",
+    "content": "I misplaced my black leather wallet near the Central Library around 2:30 PM today. It contains my student ID and a few cards. If anyone has found it, please contact me.\n\nLocation: Central Library, 2nd floor ",
+    "imageUrl": "",
+    "category": "General",
+    "likes": 0,
+    "comments": 0,
+    "id": "1783591837189",
+    "createdAt": "2026-07-09T10:10:37.189Z"
+  },
+  {
+    "id": "601",
+    "userId": "6",
+    "authorName": "Arjun Patel",
+    "authorAvatar": "https://ui-avatars.com/api/?name=Arjun+Patel&background=14532D&color=fff",
+    "college": "Campus Connect Community",
+    "department": "B.Tech IT",
+    "type": "lost",
+    "content": "Lost my AirPods in Library Block B. Please DM if found!",
+    "category": "Lost",
+    "likes": 5,
+    "comments": 2,
+    "imageUrl": "",
+    "contact": "arjun@student.edu",
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  }
+]

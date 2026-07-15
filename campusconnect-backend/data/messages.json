@@ -1,0 +1,51 @@
+[
+  {
+    "id": "m1",
+    "fromUserId": "4",
+    "toUserId": "1",
+    "content": "Hey Aditya, loved your new ML framework!",
+    "read": false,
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  },
+  {
+    "id": "m2",
+    "fromUserId": "1",
+    "toUserId": "4",
+    "content": "Thanks Divya! Let me know if you want to contribute.",
+    "read": true,
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  },
+  {
+    "fromUserId": "1783432957566",
+    "toUserId": "1",
+    "content": "Check out this post: How I balanced academics and m...",
+    "id": "1783433292249",
+    "createdAt": "2026-07-07T14:08:12.249Z",
+    "read": false
+  },
+  {
+    "fromUserId": "1783530638060",
+    "toUserId": "1783432957566",
+    "content": "Check out this post: I recently attended a workshop...",
+    "id": "1783531191737",
+    "createdAt": "2026-07-08T17:19:51.737Z",
+    "read": false
+  },
+  {
+    "fromUserId": "1783432957566",
+    "toUserId": "1783530638060",
+    "content": "Hey, just found your wallet lmk wru?",
+    "imageUrl": "",
+    "id": "1783603751019",
+    "createdAt": "2026-07-09T13:29:11.019Z",
+    "read": false
+  },
+  {
+    "fromUserId": "1783530638060",
+    "toUserId": "1783432957566",
+    "content": "Check out this post: Exploring the Future of Drone ...",
+    "id": "1784011552800",
+    "createdAt": "2026-07-14T06:45:52.800Z",
+    "read": false
+  }
+]

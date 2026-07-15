@@ -1,0 +1,23 @@
+[
+  {
+    "id": "conn1",
+    "fromUserId": "1",
+    "toUserId": "4",
+    "status": "accepted",
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  },
+  {
+    "id": "1784016155058",
+    "fromUserId": "1783530638060",
+    "toUserId": "1783432957566",
+    "status": "accepted",
+    "createdAt": "2026-07-14T08:02:35.058Z"
+  },
+  {
+    "id": "1784016227796",
+    "fromUserId": "1783432957566",
+    "toUserId": "1783530638060",
+    "status": "pending",
+    "createdAt": "2026-07-14T08:03:47.796Z"
+  }
+]

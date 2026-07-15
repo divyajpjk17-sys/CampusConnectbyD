@@ -1,0 +1,10 @@
+[
+  {
+    "id": "n1",
+    "userId": "1",
+    "message": "Divya Darshini liked your post.",
+    "type": "like",
+    "isRead": false,
+    "createdAt": "2026-07-07T13:36:29.112Z"
+  }
+]
