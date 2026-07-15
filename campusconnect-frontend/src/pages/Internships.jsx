@@ -6,7 +6,7 @@ const Internships = () => {
   const [internships, setInternships] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/internships')
+    fetch('https://campusconnectbyd.onrender.com/api/internships')
       .then(res => res.json())
       .then(data => setInternships(data))
       .catch(console.error);
@@ -19,7 +19,7 @@ const Internships = () => {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <h1 className="text-3xl font-poppins font-bold text-gray-900 mb-6">Opportunities</h1>
-      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="http://localhost:5000/api/internships" placeholder="Post a new internship opportunity..." />
+      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="https://campusconnectbyd.onrender.com/api/internships" placeholder="Post a new internship opportunity..." />
       
       <div className="space-y-6">
         {internships.map((job) => (

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Image as ImageIcon, Send, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const CreatePost = ({ onPostSuccess, apiEndpoint = 'http://localhost:5000/api/posts', placeholder = "What's on your mind?" }) => {
+const CreatePost = ({ onPostSuccess, apiEndpoint = 'https://campusconnectbyd.onrender.com/api/posts', placeholder = "What's on your mind?" }) => {
   const [content, setContent] = useState('');
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(null);
@@ -44,7 +44,7 @@ const CreatePost = ({ onPostSuccess, apiEndpoint = 'http://localhost:5000/api/po
       if (image) {
         const formData = new FormData();
         formData.append('image', image);
-        const uploadRes = await fetch('http://localhost:5000/api/upload', {
+        const uploadRes = await fetch('https://campusconnectbyd.onrender.com/api/upload', {
           method: 'POST',
           body: formData
         });

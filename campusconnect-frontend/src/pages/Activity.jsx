@@ -15,9 +15,9 @@ const Activity = () => {
     }
     // Fetch all likes, comments, and posts to build an activity feed
     Promise.all([
-      fetch('http://localhost:5000/api/likes').then(res => res.json()),
-      fetch('http://localhost:5000/api/comments').then(res => res.json()),
-      fetch('http://localhost:5000/api/posts').then(res => res.json())
+      fetch('https://campusconnectbyd.onrender.com/api/likes').then(res => res.json()),
+      fetch('https://campusconnectbyd.onrender.com/api/comments').then(res => res.json()),
+      fetch('https://campusconnectbyd.onrender.com/api/posts').then(res => res.json())
     ]).then(([likes, comments, posts]) => {
       // Create a unified activity stream for current user
       const stream = [

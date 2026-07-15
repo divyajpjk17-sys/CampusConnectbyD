@@ -38,11 +38,11 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
   useEffect(() => {
     // Check initial like/save status from APIs
     if (currentUser.id) {
-      fetch('http://localhost:5000/api/likes')
+      fetch(' https://campusconnectbyd.onrender.com/api/likes')
         .then(res => res.json())
         .then(data => setIsLiked(data.some(l => l.postId === post.id && l.userId === currentUser.id)));
       
-      fetch('http://localhost:5000/api/saved')
+      fetch('https://campusconnectbyd.onrender.com/api/saved')
         .then(res => res.json())
         .then(data => setIsSaved(data.some(s => s.postId === post.id && s.userId === currentUser.id)));
     }
@@ -51,7 +51,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
   const handleLike = async () => {
     if (!currentUser.id) return navigate('/login');
     try {
-      const res = await fetch('http://localhost:5000/api/likes', {
+      const res = await fetch(' https://campusconnectbyd.onrender.com/api/likes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ postId: post.id, userId: currentUser.id })
@@ -67,7 +67,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
   const handleSave = async () => {
     if (!currentUser.id) return navigate('/login');
     try {
-      const res = await fetch('http://localhost:5000/api/saved', {
+      const res = await fetch('https://campusconnectbyd.onrender.com/api/saved', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ postId: post.id, userId: currentUser.id })
@@ -85,7 +85,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:5000/api/comments/${post.id}`);
+      const res = await fetch(`https://campusconnectbyd.onrender.com/api/comments/${post.id}`);
       const data = await res.json();
       setComments(data);
       setShowComments(true);
@@ -97,7 +97,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
   const postComment = async () => {
     if (!newComment.trim() || !currentUser.id) return;
     try {
-      const res = await fetch('http://localhost:5000/api/comments', {
+      const res = await fetch('https://campusconnectbyd.onrender.com/api/comments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -119,7 +119,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
 
   const deleteComment = async (commentId) => {
     try {
-      await fetch(`http://localhost:5000/api/comments/${commentId}`, { method: 'DELETE' });
+      await fetch(`https://campusconnectbyd.onrender.com/api/comments/${commentId}`, { method: 'DELETE' });
       setComments(comments.filter(c => c.id !== commentId));
       setCommentCount(prev => Math.max(0, prev - 1));
     } catch (e) {
@@ -134,7 +134,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
   const openShareModal = async () => {
     setShowShareModal(true);
     try {
-      const res = await fetch('http://localhost:5000/api/users');
+      const res = await fetch('https://campusconnectbyd.onrender.com/api/users');
       const data = await res.json();
       setShareUsers(data.filter(u => u.id !== currentUser.id));
     } catch (e) {
@@ -144,7 +144,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
 
   const handleShare = async (recipientId) => {
     try {
-      await fetch('http://localhost:5000/api/messages', {
+      await fetch('https://campusconnectbyd.onrender.com/api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -163,7 +163,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
 
   const toggleLfStatus = async (newStatus) => {
     try {
-      await fetch(`http://localhost:5000/api/lost-found/${post.id}`, {
+      await fetch(`https://campusconnectbyd.onrender.com/api/lost-found/${post.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })
@@ -180,7 +180,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
 
   const handleEditSave = async () => {
     try {
-      await fetch(`http://localhost:5000/api/${getResourceName()}/${post.id}`, {
+      await fetch(`https://campusconnectbyd.onrender.com/api/${getResourceName()}/${post.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: editContent })
@@ -196,7 +196,7 @@ const PostCard = ({ post, onLike, onSave, onDelete }) => {
 
   const handleDelete = async () => {
     try {
-      await fetch(`http://localhost:5000/api/${getResourceName()}/${post.id}`, {
+      await fetch(`https://campusconnectbyd.onrender.com/api/${getResourceName()}/${post.id}`, {
         method: 'DELETE'
       });
       setIsDeleted(true);

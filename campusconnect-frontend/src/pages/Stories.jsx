@@ -6,7 +6,7 @@ const Stories = () => {
   const [stories, setStories] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/stories')
+    fetch('https://campusconnectbyd.onrender.com/api/stories')
       .then(res => res.json())
       .then(data => setStories(data))
       .catch(console.error);
@@ -19,7 +19,7 @@ const Stories = () => {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <h1 className="text-3xl font-poppins font-bold text-gray-900 mb-6">Student Stories</h1>
-      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="http://localhost:5000/api/stories" placeholder="Share your campus story..." />
+      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="https://campusconnectbyd.onrender.com/api/stories" placeholder="Share your campus story..." />
       
       <div className="space-y-6">
         {stories.map((story) => (

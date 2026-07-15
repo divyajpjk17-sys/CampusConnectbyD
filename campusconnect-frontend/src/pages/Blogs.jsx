@@ -6,7 +6,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/blogs')
+    fetch('https://campusconnectbyd.onrender.com/api/blogs')
       .then(res => res.json())
       .then(data => setBlogs(data))
       .catch(console.error);
@@ -19,7 +19,7 @@ const Blogs = () => {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <h1 className="text-3xl font-poppins font-bold text-gray-900 mb-6">Student Blogs</h1>
-      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="http://localhost:5000/api/blogs" placeholder="Write a new article..." />
+      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="https://campusconnectbyd.onrender.com/api/blogs" placeholder="Write a new article..." />
       
       <div className="space-y-6">
         {blogs.map((blog) => (

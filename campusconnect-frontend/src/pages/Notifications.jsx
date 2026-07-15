@@ -10,9 +10,9 @@ const Notifications = () => {
     if (!currentUser.id) return;
     try {
       const [notifsRes, connRes, usersRes] = await Promise.all([
-        fetch('http://localhost:5000/api/notifications'),
-        fetch('http://localhost:5000/api/connections'),
-        fetch('http://localhost:5000/api/users')
+        fetch('https://campusconnectbyd.onrender.com/api/notifications'),
+        fetch('https://campusconnectbyd.onrender.com/api/connections'),
+        fetch('https://campusconnectbyd.onrender.com/api/users')
       ]);
       const notifs = await notifsRes.json();
       const conns = await connRes.json();
@@ -50,7 +50,7 @@ const Notifications = () => {
   const markAsRead = async (id, isRead) => {
     if (isRead || id.startsWith('conn_')) return;
     try {
-      await fetch(`http://localhost:5000/api/notifications/${id}`, {
+      await fetch(`https://campusconnectbyd.onrender.com/api/notifications/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ read: true })
@@ -63,7 +63,7 @@ const Notifications = () => {
 
   const handleConnectionAction = async (fromUserId, action) => {
     try {
-      await fetch('http://localhost:5000/api/connections', {
+      await fetch('https://campusconnectbyd.onrender.com/api/connections', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ fromUserId, toUserId: currentUser.id, action })

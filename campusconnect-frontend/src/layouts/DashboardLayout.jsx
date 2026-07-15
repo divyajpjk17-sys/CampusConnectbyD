@@ -22,7 +22,7 @@ const DashboardLayout = () => {
   useEffect(() => {
     if (searchQuery.trim().length > 1) {
       // Simulate global search across users
-      fetch('http://localhost:5000/api/users')
+      fetch('https://campusconnectbyd.onrender.com/api/users')
         .then(res => res.json())
         .then(data => {
           setSearchResults(data.filter(u => u.name.toLowerCase().includes(searchQuery.toLowerCase())));

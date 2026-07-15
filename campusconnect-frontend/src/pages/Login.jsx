@@ -21,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    const endpoint = isLogin ? 'http://localhost:5000/api/login' : 'http://localhost:5000/api/register';
+    const endpoint = isLogin ? 'https://campusconnectbyd.onrender.com/api/login' : 'https://campusconnectbyd.onrender.com/api/register';
     
     try {
       const response = await fetch(endpoint, {

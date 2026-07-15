@@ -46,7 +46,7 @@ const writeData = (filename, data) => {
 // Upload Image
 app.post('/api/upload', upload.single('image'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No image provided' });
-  const imageUrl = `http://localhost:${PORT}/uploads/${req.file.filename}`;
+  const imageUrl = `https://campusconnectbyd.onrender.com/uploads/${req.file.filename}`;
   res.json({ url: imageUrl });
 });
 
@@ -304,5 +304,5 @@ app.put('/api/notifications/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Backend server running on http://localhost:${PORT}`);
+  console.log(`Backend server running on https://campusconnectbyd.onrender.com${PORT}`);
 });

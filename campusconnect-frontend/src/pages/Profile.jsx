@@ -29,7 +29,7 @@ const Profile = () => {
 
   const fetchData = () => {
     // Fetch user profile
-    fetch(`http://localhost:5000/api/users/${profileId}`)
+    fetch(`https://campusconnectbyd.onrender.com/api/users/${profileId}`)
       .then(res => res.json())
       .then(data => {
         if (data.error) navigate('/feed');
@@ -39,24 +39,24 @@ const Profile = () => {
       .catch(console.error);
 
     // Fetch posts
-    fetch('http://localhost:5000/api/posts')
+    fetch('https://campusconnectbyd.onrender.com/api/posts')
       .then(res => res.json())
       .then(data => setPosts(data.filter(p => p.userId === profileId)))
       .catch(console.error);
 
     // Fetch saved posts
     if (isOwnProfile) {
-      fetch('http://localhost:5000/api/saved')
+      fetch('https://campusconnectbyd.onrender.com/api/saved')
         .then(res => res.json())
         .then(async savedData => {
-            const allPosts = await fetch('http://localhost:5000/api/posts').then(r => r.json());
+            const allPosts = await fetch('https://campusconnectbyd.onrender.com/api/posts').then(r => r.json());
             const userSaved = savedData.filter(s => s.userId === currentUser.id);
             setSavedPosts(allPosts.filter(p => userSaved.some(s => s.postId === p.id)));
         });
     }
 
     // Fetch connections
-    fetch('http://localhost:5000/api/connections')
+    fetch('https://campusconnectbyd.onrender.com/api/connections')
       .then(res => res.json())
       .then(data => {
         if (!isOwnProfile && currentUser.id) {
@@ -81,7 +81,7 @@ const Profile = () => {
     formData.append('image', file);
     
     try {
-      const res = await fetch('http://localhost:5000/api/upload', {
+      const res = await fetch('https://campusconnectbyd.onrender.com/api/upload', {
         method: 'POST',
         body: formData
       });
@@ -96,14 +96,14 @@ const Profile = () => {
     if (!currentUser.id) return navigate('/login');
     try {
       if (connectionStatus === 'accepted' || connectionStatus === 'pending') {
-        await fetch('http://localhost:5000/api/connections', {
+        await fetch('https://campusconnectbyd.onrender.com/api/connections', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ fromUserId: currentUser.id, toUserId: profileId, action: 'decline' })
         });
         setConnectionStatus('none');
       } else {
-        await fetch('http://localhost:5000/api/connections', {
+        await fetch('https://campusconnectbyd.onrender.com/api/connections', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ fromUserId: currentUser.id, toUserId: profileId, action: 'request' })
@@ -118,7 +118,7 @@ const Profile = () => {
 
   const handleSaveProfile = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/users/${currentUser.id}`, {
+      const res = await fetch(`https://campusconnectbyd.onrender.com/api/users/${currentUser.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editForm)

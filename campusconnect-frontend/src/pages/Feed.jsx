@@ -6,7 +6,7 @@ const Feed = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/posts')
+    fetch('https://campusconnectbyd.onrender.com/api/posts')
       .then(res => res.json())
       .then(data => setPosts(data))
       .catch(console.error);
@@ -18,7 +18,7 @@ const Feed = () => {
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
-      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="http://localhost:5000/api/posts" />
+      <CreatePost onPostSuccess={handleNewPost} apiEndpoint="https://campusconnectbyd.onrender.com/api/posts" />
       
       <div className="space-y-6">
         {posts.map((post) => (
